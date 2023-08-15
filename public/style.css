@@ -6,19 +6,34 @@ body{
     background-image: url('./assets/images/board2background.jpeg');
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:  repeat(13, 50px); 
+    grid-template-rows: repeat(13, 50px); 
 }
 
 .grid-item{
     width:50px;
     height: 50px;
-    border: 1px solid aqua;
+    border: 2px solid aqua;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .domino{
-    border: 1px solid black;
+    border: 2px solid black;
     width:50px;
     height:25px;
 }
+
+/* .grid-item:nth-child(1){
+    grid-column-start: 7;
+    grid-row-start: 7;
+} */
+

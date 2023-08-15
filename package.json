@@ -4,7 +4,9 @@
   "description": "Mini domino game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:build": "sass scss:public/styles",
+    "scss:watch": "sass --watch scss:public/styles"
   },
   "repository": {
     "type": "git",
