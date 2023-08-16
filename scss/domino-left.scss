@@ -1,0 +1,30 @@
+@for $i from 1 through 28 {
+    @if ($i <= 6){
+        .grid-item:nth-child(#{$i}){
+            grid-column-start: 7;
+            grid-row-start: #{8 - $i};
+        }
+    } @else if $i > 6 and $i <= 8{
+        .grid-item:nth-child(#{$i}){
+            grid-column-start: #{7 - ($i - 6)};
+            grid-row-start: 2;
+            height: 25px;
+        }
+    } @else if $i > 8 and $i <= 18{
+        .grid-item:nth-child(#{$i}){
+            grid-column-start: 5;
+            grid-row-start: #{2 + ($i - 8)};
+        }
+    } @else if $i > 18 and $i <= 20{
+        .grid-item:nth-child(#{$i}){
+            grid-column-start: #{5 - ($i - 18)};
+            grid-row-start: 12;
+            height: 25px;
+        }
+    } @else if $i > 20 and $i <= 28{
+        .grid-item:nth-child(#{$i}){
+            grid-column-start: 3;
+            grid-row-start: #{12 - ($i - 20)};
+        }
+    }
+}
