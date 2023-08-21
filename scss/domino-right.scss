@@ -8,6 +8,7 @@
         .grid-item:nth-child(#{$i}){
             grid-column-start: #{7 + ($i - 6)};
             grid-row-start: 12;
+            height: 25px;
         }
     } @else if $i > 8 and $i <= 18{
         .grid-item:nth-child(#{$i}){
@@ -18,6 +19,7 @@
         .grid-item:nth-child(#{$i}){
             grid-column-start: #{9 + ($i - 18)};
             grid-row-start: 2;
+            height: 25px;
         }
     } @else if $i > 20 and $i <= 28{
         .grid-item:nth-child(#{$i}){
